@@ -15,7 +15,7 @@ const SaidBar = ({ avatarClick }) => {
   };
 
   return (
-    <div className=" fixed bottom-0 w-full  left-0  sm:h-screen sm:block overflow-x-hidden sm:w-28 bg-white border-r-2 border-gray-100">
+    <div className=" fixed bottom-0 w-full  left-0  top-0 sm:h-full sm:block overflow-x-hidden sm:w-28 bg-white border-r-2 border-gray-100">
       <div className=" sm:flex sm:flex-col justify-between h-full items-center py-5">
         <div className=" hidden sm:block w-12 h-12">
           <Link to="/">

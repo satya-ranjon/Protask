@@ -110,47 +110,55 @@ const Tasks = () => {
       </div>
 
       {/* Task groups */}
-      <div className="2xl:mx-14 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 ">
-        {filter?.map((filterItem) => {
-          const [{ isOver }, drop] = useDrop(() => ({
-            accept: "task",
-            drop: (item) => addItemToTaskGroup(item),
-            collect: (monitor) => ({
-              isOver: !!monitor.isOver(),
-            }),
-          }));
+      <div className="w-full overflow-scroll">
+        <div className=" min-w-[1290px] ">
+          <div className="2xl:mx-14 grid grid-cols-4  ">
+            {filter?.map((filterItem) => {
+              const [{ isOver }, drop] = useDrop(() => ({
+                accept: "task",
+                drop: (item) => addItemToTaskGroup(item),
+                collect: (monitor) => ({
+                  isOver: !!monitor.isOver(),
+                }),
+              }));
 
-          const addItemToTaskGroup = (item) => {
-            console.log(filterItem.id);
-            if (filterItem.id !== item?.status) {
-              updateTask({ data: { status: filterItem.id }, taskId: item._id });
-            }
-          };
+              const addItemToTaskGroup = (item) => {
+                if (filterItem.id !== item?.status) {
+                  updateTask({
+                    data: { status: filterItem.id },
+                    taskId: item._id,
+                  });
+                }
+              };
 
-          return (
-            <TaskGroup
-              ref={drop}
-              key={filterItem.id}
-              title={filterItem.id}
-              taskCount={
-                getFilteredTasks(filterItem.id, filterItem.order).length
-              }>
-              {isOver && <div className=" w-full h-20 bg-hover"></div>}
+              return (
+                <TaskGroup
+                  ref={drop}
+                  key={filterItem.id}
+                  title={filterItem.id}
+                  taskCount={
+                    getFilteredTasks(filterItem.id, filterItem.order).length
+                  }>
+                  {isOver && <div className=" w-full h-20 bg-hover"></div>}
 
-              {/* Display filtered and sorted tasks */}
-              {getFilteredTasks(filterItem.id, filterItem.order).map((task) => (
-                <SingleTask key={task._id} task={task} />
-              ))}
-              {isLoading && (
-                <>
-                  <TaskItemSkelton />
-                  <TaskItemSkelton />
-                  <TaskItemSkelton />
-                </>
-              )}
-            </TaskGroup>
-          );
-        })}
+                  {/* Display filtered and sorted tasks */}
+                  {getFilteredTasks(filterItem.id, filterItem.order).map(
+                    (task) => (
+                      <SingleTask key={task._id} task={task} />
+                    )
+                  )}
+                  {isLoading && (
+                    <>
+                      <TaskItemSkelton />
+                      <TaskItemSkelton />
+                      <TaskItemSkelton />
+                    </>
+                  )}
+                </TaskGroup>
+              );
+            })}
+          </div>
+        </div>
       </div>
       {/* Modal for adding tasks */}
       <Modal
