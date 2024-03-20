@@ -281,14 +281,16 @@ Here's a brief explanation of the environment variables required for this projec
 
 ## Screenshots
 
-![App Screenshot](https://i.ibb.co/NpL63Ld/screencapture-protesk-netlify-app-2024-03-20-23-34-45.png)
-![App Screenshot](https://i.ibb.co/HxqL2wD/Screenshot-2024-03-20-235021.png)
-![App Screenshot](https://i.ibb.co/9NzcLcW/Screenshot-2024-03-20-235124.png)
-![App Screenshot](https://i.ibb.co/c183ZTS/Screenshot-2024-03-20-235101.png)
-![App Screenshot](https://i.ibb.co/QDpRN6L/Screenshot-2024-03-20-235140.png)
-![App Screenshot](https://i.ibb.co/Tws6jVJ/Screenshot-2024-03-20-235156.png)
-![App Screenshot](https://i.ibb.co/fxgN7Y2/Screenshot-2024-03-20-235458.png)
-![App Screenshot](https://i.ibb.co/vD09vpZ/Screenshot-2024-03-20-235444.png)
-![App Screenshot](https://i.ibb.co/dQ3hqwG/Screenshot-2024-03-20-235226.png)
-![App Screenshot](https://i.ibb.co/nsVJ43b/Screenshot-2024-03-20-235214.png)
-![App Screenshot](https://i.ibb.co/6FHgfdd/Screenshot-2024-03-20-235515.png)
+<div align="center">
+    <img src="https://i.ibb.co/NpL63Ld/screencapture-protesk-netlify-app-2024-03-20-23-34-45.png" alt="App Screenshot" style="display:block; margin:auto;">
+    <img src="https://i.ibb.co/HxqL2wD/Screenshot-2024-03-20-235021.png" alt="App Screenshot" style="display:block; margin:auto;">
+    <img src="https://i.ibb.co/9NzcLcW/Screenshot-2024-03-20-235124.png" alt="App Screenshot" style="display:block; margin:auto;">
+    <img src="https://i.ibb.co/c183ZTS/Screenshot-2024-03-20-235101.png" alt="App Screenshot" style="display:block; margin:auto;">
+    <img src="https://i.ibb.co/QDpRN6L/Screenshot-2024-03-20-235140.png" alt="App Screenshot" style="display:block; margin:auto;">
+    <img src="https://i.ibb.co/Tws6jVJ/Screenshot-2024-03-20-235156.png" alt="App Screenshot" style="display:block; margin:auto;">
+    <img src="https://i.ibb.co/fxgN7Y2/Screenshot-2024-03-20-235458.png" alt="App Screenshot" style="display:block; margin:auto;">
+    <img src="https://i.ibb.co/vD09vpZ/Screenshot-2024-03-20-235444.png" alt="App Screenshot" style="display:block; margin:auto;">
+    <img src="https://i.ibb.co/dQ3hqwG/Screenshot-2024-03-20-235226.png" alt="App Screenshot" style="display:block; margin:auto;">
+    <img src="https://i.ibb.co/nsVJ43b/Screenshot-2024-03-20-235214.png" alt="App Screenshot" style="display:block; margin:auto;">
+    <img src="https://i.ibb.co/6FHgfdd/Screenshot-2024-03-20-235515.png" alt="App Screenshot" style="display:block; margin:auto;">
+</div>
