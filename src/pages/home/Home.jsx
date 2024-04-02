@@ -5,11 +5,12 @@ import Features from "../features/Features";
 import Pricing from "../pricing/Pricing";
 import Navbar from "../../components/navbar/Navbar";
 import useTitleSet from "../../hooks/useTitleSet";
-import { useGetServerQuery } from "../../services/api/api";
+import { useGetSeverQuery } from "../../services/event/eventApi";
 
 const Home = () => {
   useTitleSet("Home");
-  useGetServerQuery();
+  useGetSeverQuery();
+
   return (
     <div>
       {/* Navbar & Hero Section  */}

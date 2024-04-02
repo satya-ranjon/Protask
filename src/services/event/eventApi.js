@@ -80,6 +80,9 @@ const eventApi = apiSlice.injectEndpoints({
         } catch {}
       },
     }),
+    getSever: builder.query({
+      query: () => "/",
+    }),
   }),
 });
 
@@ -88,4 +91,5 @@ export const {
   useGetAllEventsQuery,
   useUpdateEventMutation,
   useGetSingleEventQuery,
+  useGetSeverQuery,
 } = eventApi;
