@@ -15,7 +15,12 @@ const apiSlice = createApi({
   }),
   keepUnusedDataFor: 60 * 60 * 2,
 
-  endpoints: (builder) => ({}),
+  endpoints: (builder) => ({
+    getServer: builder.query({
+      query: "/",
+    }),
+  }),
 });
 
+export const { useGetServerQuery } = apiSlice;
 export default apiSlice;
